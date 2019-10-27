@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,500,700" rel="stylesheet">
     <style>
-
+     
         body {
             font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-size: calc(10px + 0.33vw);
@@ -30,6 +30,7 @@
             font-weight: 300;
             line-height: 1.4;
             max-width: 26em;
+         
         }
 
         a {
@@ -55,7 +56,7 @@
         }
 
         div {
-
+            
             padding: 0px;
             height: 5em;
 
@@ -91,10 +92,10 @@
         margin: 1em;
         font-weight: bold;
         cursor: pointer;
-     
+        outline: none;
 
-        
     }
+ 
     .null{
         height: 7em;
     }
@@ -106,16 +107,20 @@
         height: 1.4em;
         background-color: rgb(247, 70, 70);
     }
+    .whitemode{
+        background-color: white;
+    }
   
-        
+  
     </style>
 </head>
 
 <body>
-    <nav></nav>
+    <nav><button id="tintmode">切换到沉浸模式</button></nav>
+    <div class="wrappers">
     <div>
         <a href="https://ttt.bz">
-            <img src="https://i.postimg.cc/Pf8GZyyM/cb70fbbe.png" alt="Twicecandy糖果首站（测试中）"
+            <img src="https://pic.yupoo.com/twicecandy/9c3b5e90/cb70fbbe.png" alt="Twicecandy糖果首站（测试中）"
                 style="float: left; width: 180px;margin-top: 20px;" >
         </a>
 
@@ -126,7 +131,7 @@
     <h1 id="noon" style="display: none">中午好，</h1>
     <h1 id="afternoon" style="display: none">下午好，</h1>
     <h1 id="evening" style="display: none">晚上好，</h1>
-    <p style="font-weight: 500; font-size:2.2em">
+    <p style="font-weight: 500; font-size:2.2em" >
         这里是TWICECANDY糖果中文首站
         <br/>
         (短域名TTT.BZ)
@@ -143,7 +148,7 @@
             &nbsp;
             <a class="available" href="https://www.behance.net/lightyisu" target="_blank">
                 Behance</a>(在中国境内暂不可访问)</p>
-        <p><img src="weiboicon.png" alt="weiboicon" height="35em" style="float: left">
+        <p><img src="weiboicon.png" alt="weiboicon" height="35em" style="float: left" id="weibo">
             &nbsp;&nbsp;<a class="available" href="https://weibo.com/ioder7" target="_blank">
                 微博</a></p>
         <p>
@@ -159,12 +164,8 @@
     <p style="font-size:1.2em">Ps:全站借鉴了部分evanyou.me的代码,全新改版于2019.6.30日
     <br/>
     <br/>
-   2019.9.14恢复访问
-  
-    <br/>
-   2019.9.24增加短域名跳转TTT.BZ
-   <br/>
-   2019.10.1又拍技术改造 LOGO托管POSTIMAGE图床 10月10日恢复</p>
+   首页已添加沉浸模式,正在完善中
+</p>
    <p id="presentTime" style="font-size: 1.1em;font-weight: 400;"></p>
 
     <br />
@@ -173,7 +174,7 @@
     <a class="available" href="developerlog.html">开发日志</a>
     <br/>
     <br/>
-    <a class="available" href="http://withlovej.tk">WithloveJ.tk</a>
+    <a class="available" href="http://www.withlovej.tk">WithloveJ.tk</a>
   
     <br/>
     
@@ -187,6 +188,7 @@
     <span id="span_dt_dt"></span>
     <br/>
     <div class="null"></div>
+    </div>
     <footer>2019-2020&copy;Twicecandy.com&TTT.BZ&nbsp;&nbsp;Copyright
       <br/> <button>正在建站</button>
     </footer>
@@ -235,6 +237,17 @@
             document.getElementById('presentTime').innerHTML='当前载入时间:'+myDate;
         }
         showTime();
+        document.getElementById('tintmode').addEventListener('click',function(){
+            document.querySelector('html').style.backgroundColor='rgb(247, 70, 70)';
+            this.style.backgroundColor='white';
+            this.style.color='red';
+            this.innerHTML='DONE';
+            document.querySelector('p').setAttribute('class','whitemode');
+            document.getElementById('weibo').setAttribute('class','whitemode');
+       
+         
+            
+        })
     </script>
 
 </body>
