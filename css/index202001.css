@@ -67,6 +67,12 @@ bottom: 0;
     .rightIcon{
         width: 30vw;
     }
+    button{
+        width: 70vw !important;
+    }
+    footer{
+        height: 120px !important;
+    }
 }
 .guide1{
     position: absolute;
@@ -111,7 +117,7 @@ button{
     position: absolute;
     bottom: 10%;
     left: 50%;
-      right: 50%;
+      
     transform: translate(-50%, -50%);
 }
 #weibobtn{
@@ -144,7 +150,7 @@ button{
 }
 footer{
     position: relative;
-    height: 22%;
+    height: 200px;
     background-color: black;
     font-family: 'Montserrat', sans-serif;
     color: white;
