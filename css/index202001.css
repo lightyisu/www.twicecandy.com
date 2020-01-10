@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+ 
+}
+@font-face{
+    font-family: 'hanyitiexian';
+    src: url(../HYTieXianHei-65J.ttf);
+}
+div{
+    
+    min-height: 100%;
+    height: auto;
+}
+
+
+div:nth-child(1){
+    position: relative;
+}
+
+div:nth-child(1) h1{
+   
+    display: inline-block;
+    font-size: 10vw;
+    word-wrap:break-word;
+    max-width: 100%;
+    color: #ff0000;
+}
+/**#bottom{
+    height: 200px;
+  position: absolute;
+top: 100%;
+  left: 50%;
+  right: 30%;
+  transform: translate(-50%, -50%);
+}**/
+#first p{
+    position: absolute;
+bottom: 0;
+  left: 50%;
+  right: 30%;
+  transform: translate(-50%, -50%);
+    vertical-align: bottom;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+   
+    font-size: 1.5vw;
+    
+}
+
+@media screen and (max-width: 800px) {
+   #tag{
+       
+       font-size: 25vw !important;
+    }
+    #first p{
+        word-wrap: break-word;
+        font-size: 10px !important;
+    }
+    .head{
+        font-size: 16vw !important;
+    }
+    .rightIcon{
+        width: 30vw;
+    }
+}
+.guide1{
+    position: absolute;
+    bottom: 4%;
+    right: 2%;
+}
+.guide2{
+    position: absolute;
+    left: 3%;
+    bottom: 3%;
+}
+#second,#third,#fourth,#fifth,#sixth{
+    position: relative;
+    font-size: 5vw;
+    color:#ff0000 ;
+    font-family: serif;
+    font-weight: lighter;
+    font-family: 'hanyitiexian';
+}
+#second,#third,#fourth,#fifth,#sixth p{
+    color: black;
+
+
+}
+.head{
+    margin-left: 2vw;
+}
+.rightIcon{
+    position: absolute;
+    right: 3%;
+   
+}
+button{
+    outline: none;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+      right: 50%;
+    transform: translate(-50%, -50%);
+}
+#weibobtn{
+ 
+
+    background-color: #fc3a3a;
+}
+#githubbtn{
+    background-color: black;
+}
+#time{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+   font-size: 4vw;
+    transform: translate(-50%, -50%);
+}
+#fifth p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ff0000;
+}
+#devbtn{
+    background-color: #fc3a3a;
+    width: 25vw;
+}
+footer{
+    position: relative;
+    height: 22%;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 2vw;
+    font-weight: 400;
+}
+footer p:nth-child(1){
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+footer p:nth-child(2){
+    position: absolute;
+    top: 30%;
+    right: 12%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

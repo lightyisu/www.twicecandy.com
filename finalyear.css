@@ -130,6 +130,7 @@
      .github button{
          background-color: black;
      }
+     
      .github img{
         transform: scale(0.65);
         position: relative;
@@ -164,4 +165,10 @@
      a{
          text-decoration: none;
          color: black;
+     }
+     .mail p{
+         font-size: 1.1em;
+     }
+     .mail a{
+         text-decoration: underline;
      }

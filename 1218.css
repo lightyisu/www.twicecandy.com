@@ -1,0 +1,43 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    background-image: url(http://pic.yupoo.com/twicecandy/988e4542/f6cc8c1b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+}
+p{
+    font-size: 25px;
+    font-weight: bolder;
+    color: black;
+}
+footer{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+}
+footer p{
+    margin: 0;
+    font-size: 16px;
+    color: white;
+}
+footer img{
+    margin: 0;
+   transform: scale(0.2);
+}
+section{
+    text-align: center;
+}
+.rightIcon{
+    position: absolute;
+    right: 3%;
+    
+}

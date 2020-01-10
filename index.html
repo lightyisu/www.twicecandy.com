@@ -1,112 +1,80 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+    
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="twice,twicecandy,糖果首站">
-    <title>Twicecandy个人站(2019 beta version)</title>
+    <meta name="keywords" content="twicecandy,twice,twice个人站，twicecandy官网">
+    <title>Twicecandy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no, viewport-fit=cover" />
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,500,700" rel="stylesheet">
-    <link href="finalyear.css" rel="stylesheet" type="text/css">
-</head>
+    <link href="https://fonts.font.im/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
+    <link href="https://fonts.font.im/css?family=Montserrat" rel="stylesheet">
+    <link href="css/index202001.css" rel="stylesheet" type="text/css">
+    </head>
 <body>
-    <nav><a href="oldversion.html"><button id="immersionmode">切换到旧版本</button>
-        </a>
-     </nav>
-     
-     <div class="card logo">
-     <img src="twicelogo.png" alt="twice20191114logo" style="transform: scale(0.85);">
-     <p id="time"></p>
-     <p id="time2">hello</p>
-     </div>
-
-     <div id="greeting">
-        <div id="content">
-        <h1 id="morning" style="display: none">早上好，</h1>
-        <h1 id="noon" style="display: none">中午好，</h1>
-        <h1 id="afternoon" style="display: none">下午好，</h1>
-        <h1 id="evening" style="display: none">晚上好，</h1>
-         <p id="greetingDate"></p>
-         </div>
-     </div>
-
+    <!--super-self-adaption1.0 自适应浏览器的100%高度-->
+    <div id="first">
+        <h1 id="tag">TWICECANDY.</h1>
+       <img src="guider.png" alt="guide" class="guide1">
+        
+        <P>WWW.TWICECANDY.COM OF 2020</P>
+        
     
 
-     <div id="intro">
-         <p>这里是TWICECANDY</p>
-         <br/>
-         <P>(短域名TTT.BZ)</P>
-     </div>
 
-     <div class="main">
-         <img src="behance.png" alt="behance">
-         <a class="available" href="https://www.behance.net/lightyisu"
-         target="_blank"> <button> 在Behance上找到我</button></a>
-     </div>
-
-     <div class="main weibo">
-         <img src="weibo.png" alt="weibo">
-         <a class="available" href="https://weibo.com/ioder7" target="_blank"> <button>在微博上找到我</button>
-            </a>
-     </div>
-
-     <div class="main github">
-        <img src="github.png" alt="github">
-        <a class="available" href="https://github.com/lightyisu/www.twicecandy.com" target="_blank">
-        <button>Github中查看网站的源码</button>
-     </a>
     </div>
-    <div class="main twohundredday">
-        <img src="200day.png" alt="200day">
-        <p>已运行200天+时间</p>
+    <div id="second">
+        <div class="head">
+        <h1>微博</h1>
+        <p>Weibo</p>
+        </div>
+        <img src="guider.png" alt="guide" class="guide2" >
+        <img src="Qweibo.png" alt="qweibo" class="rightIcon">
+        <button id="weibobtn"><a href="https://weibo.com/ioder7" target="_blank">点击这里在微博上找到我:)</a></button>
     </div>
-    <div class="devIntro">
-        <img src="devIntro.png">
-        <a href="developerlog.html">
-        <p>开发日志.</p>
-        </a>
+    <div id="third">
+        <div class="head">
+            <h1>Github</h1>
+            <p>Github.com</p>
+        </div>
+        <img src="guider.png" alt="guide" class="guide1" >
+        <img src="githubQ.png" alt="githubQ" class="rightIcon">
+        <button id="githubbtn">
+            <a href="https://github.com/lightyisu/www.twicecandy.com" target="_blank">在Github上查看实时存储的本站源码</a></button>
     </div>
-
-     
-
-
-
-<script>
-    var monthName=['JAN','FEB','MAR','APR','MAY','JUN','JUL',"AUG",'SEP','OCT','NOV','DEC']
-    var weekDays=['Mon','Tue','Wed','Thursday','Friday','Sat','Sun']
-    var todayDate=new Date();
-    var month=todayDate.getMonth();
-    var weekDay=todayDate.getDay()-1;
-    var year=todayDate.getFullYear();       
-    var day=todayDate.getDate();
-
-    document.getElementById('time').innerHTML=weekDays[weekDay]+',';
-    document.getElementById('time2').innerHTML=monthName[month];
-    document.getElementById('greetingDate').innerHTML=year+'年'+(month+1)+'月'+day+'日';
-
-
-    function showGreeting(){
-            var myDate=new Date();
-            var hour=myDate.getHours();
-            if(hour<=10&&hour>=6){
-                document.getElementById('morning').style.display='';
-            }
-            else if(hour>10&&hour<=12){
-                document.getElementById('noon').style.display='';
-            
-            }
-            else if(hour<19&&hour>12){
-                document.getElementById('afternoon').style.display='';
-            }
-            else{
-                document.getElementById('evening').style.display='';
-            }
-        }
-  showGreeting();
-</script>
+    <div id="fourth">
+        <div class="head">
+            <h1>本站运行时间</h1>
+            <p>Server run time</p>
+        </div>
+        <span id="time"></span>
+        <img src="guider.png" alt="guide" class="guide2" >
+    </div>
+    <div id="fifth">
+        <div class="head">
+            <h1>EMAIL</h1>
+        </div>
+        <p>lightyisu@twicecandy.com</p>
+        <img src="guider.png" alt="guide" class="guide1" >
+    </div>
+    <div id="sixth">
+        <div class="head">
+            <h1>开发日志</h1>
+            <P>dev of TC</P>
+        </div>
+        <button id="devbtn"><a href="developerlog.html" target="_blank">查看开发日志</a></button>
+    </div>
+    <footer>
+        <P>&copy;www.twicecandy.com 3.0 version(BETA)
+            <br/>All rights reserved for twicecandy
+        </P>
+        <p>
+            2019-<br/>2020
+        </p>
+    </footer>
+    <script src="js/CountingTime.js"></script>
 
 </body>
-
 </html>
